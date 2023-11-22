@@ -1,0 +1,20 @@
+<!-- addbook.ejs -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add a New Book</title>
+    <link rel="stylesheet" type="text/css" href="/main.css" />
+  </head>
+  <body>
+    <h1>Add a New Book</h1>
+    <form action="/bookadded" method="post">
+      <label for="name">Book Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="price">Price:</label>
+      <input type="text" id="price" name="price" required />
+
+      <input type="submit" value="Add Book" />
+    </form>
+  </body>
+</html>

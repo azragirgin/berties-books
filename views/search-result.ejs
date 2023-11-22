@@ -1,0 +1,30 @@
+<!-- search-result.ejs -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Search Result</title>
+    <link rel="stylesheet" type="text/css" href="/main.css" />
+  </head>
+  <body>
+    <h1>Search Result for "<%= searchKeyword %>"</h1>
+
+    <h2>Exact Match (Basic Search)</h2>
+    <ul>
+      <% for(let i = 0; i < basicSearchResult.length; i++) { %>
+      <li>
+        <%= basicSearchResult[i].name %> - <%= basicSearchResult[i].price %>
+      </li>
+      <% } %>
+    </ul>
+
+    <h2>Partial Match (Advanced Search)</h2>
+    <ul>
+      <% for(let i = 0; i < advancedSearchResult.length; i++) { %>
+      <li>
+        <%= advancedSearchResult[i].name %> - <%= advancedSearchResult[i].price
+        %>
+      </li>
+      <% } %>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+<!-- bargainbooks.ejs -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bargain Books</title>
+    <link rel="stylesheet" type="text/css" href="/main.css" />
+  </head>
+  <body>
+    <h1>Bargain Books</h1>
+    <ul>
+      <% for(let i = 0; i < bargainBooks.length; i++) { %>
+      <li><%= bargainBooks[i].name %> - <%= bargainBooks[i].price %></li>
+      <% } %>
+    </ul>
+  </body>
+</html>
